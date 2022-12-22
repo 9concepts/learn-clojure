@@ -13,3 +13,19 @@
 (fn [message] (println message))
 
 (def greet (fn [message] (println message)))
+
+(def increment (fn [x] (+ x 1)))
+
+(defn increment_set [array] (map increment array))
+
+(println (increment_set [1, 2, 3]))
+
+(defn DataTypes []
+  (def a 1)
+  (def b 1.25)
+  (def c 1.25e-12)
+  (println a)
+  (println b)
+  (println c))
+
+(DataTypes)
