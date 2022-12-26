@@ -36,3 +36,7 @@
 (defn messenger
   ([] (messenger "Hello world!"))
   ([msg] (println msg)))
+
+; variadic-function
+(defn hello [greeting & who]
+  (println greeting who))
