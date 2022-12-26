@@ -29,3 +29,10 @@
   (println c))
 
 (DataTypes)
+
+(defn greet [name] (str "Hello, " name))
+
+; multi-arity function
+(defn messenger
+  ([] (messenger "Hello world!"))
+  ([msg] (println msg)))
